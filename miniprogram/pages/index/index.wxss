@@ -1,0 +1,52 @@
+/**index.wxss**/
+
+#index {
+  width: 100%;
+  overflow: hidden;
+}
+.title{
+  height: 8rem;
+  text-align: center;
+  padding-top: 0.8rem;
+}
+
+.topic{
+  font-size: 2.2rem;
+  color:#019f46;
+  font-weight: bold;
+}
+.topic_intro{
+  padding-top: 0.8rem;
+}
+.topic_intro_text{
+  font-size:1.2rem;
+}
+.h5{
+  color: #019f46;
+  padding-top: 0.7rem;
+}
+
+.main-list {
+  text-align: center;
+}
+
+.main-list navigator {
+  padding: 1rem 0.2rem 1rem 0.2rem;
+}
+
+.main-list navigator .h5, .main-list navigator .p {
+  margin: 0.3rem;
+}
+
+.main-list navigator .p {
+  font-size: 0.7rem !important;
+  color: #888888;
+}
+
+.main-list navigator .iconfont {
+  font-size: 2.2rem !important;
+}
+
+
+
+

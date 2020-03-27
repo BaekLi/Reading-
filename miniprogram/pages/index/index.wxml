@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view id="index">
+    <view>
+        <image src="../../images/logo.jpg" class="full-image" alt=""></image>
+    </view>
+    <view class="title">
+        <view><text class="topic">reading+</text></view>
+        <view class="topic_intro"><text class="topic_intro_text">打造最佳的幼儿核心素养孵化平台</text></view>  
+    </view>
+    <view style="margin-top: -2.2rem;">
+        <view class="card">
+            <view class="row  light-bg row-center main-list">
+                <navigator url="../cepin/cepin" open-type="navigate" class="col border-rb">
+                    <text class="icon iconfont icon-xinxidengji dark"></text>
+                    <view>
+                        <view class="h5">量表测量</view>
+                    </view>
+                </navigator>
+                <navigator url="../repo/repo" open-type="navigate" class="col border-b">
+                    <text class="icon iconfont icon-form dark"></text>
+                    <view>
+                        <view class="h5">分析报告</view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="row  light-bg row-center  main-list">
+                <navigator url="../plan/plan" open-type="navigate" class="col border-r">
+                    <text class="icon iconfont icon-jiedan dark"></text>
+                    <view>
+                        <view class="h5">益智计划</view>
+                    </view>
+                </navigator>
+                <navigator url="../check/check" open-type="navigate" class="col">
+                    <text class="icon iconfont icon-roundcheck dark"></text>
+                    <view>
+                        <view class="h5">每日打卡</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+
+</view>
+
