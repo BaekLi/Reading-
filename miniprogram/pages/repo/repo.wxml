@@ -1,0 +1,32 @@
+<!--miniprogram/pages/repo/repo.wxml-->
+<view class="content">
+        <view class="title">结合幼儿多元智能理论的分析报告</view>
+        <view class="intro">
+            <view><text decode="true">&emsp;&emsp;家长您好！根据您所填写的《3-7岁幼儿多元智能家长评定问卷》，我们依据多元智能理论的九个维度，即言语语言智能、逻辑数学智能、视觉空间智能、身体动觉智能、音乐节奏智能、交往交流智能、自知自省智能、自然观察智能和存在智能，为您的孩子进行了如下的分析：</text></view>
+        </view>
+        <view class="ruxia"><text decode="true">您孩子的分析结果如下：</text>
+        </view>
+        <view style="height:8px;background-color: green;margin-top:8px;margin-bottom: -45px;"></view>
+
+        <view class="radarContainer">
+        <canvas class="radarCanvas" canvas-id="radarCanvas"></canvas>
+        </view>
+
+            <view class="analyse">
+            <view style="height:8px;background-color: green;margin-bottom:12px"></view>
+              <view class="zhineng">言语语言智能:</view><view class="fenshu">{{yanyu}}</view><view class="fen">分</view><view class="judge">({{zn[0]}})</view>
+              <view class="zhineng">逻辑数学智能:</view><view class="fenshu">{{shuxue}}</view><view class="fen">分</view><view class="judge">({{zn[1]}})</view>
+              <view class="zhineng">视觉空间智能:</view><view class="fenshu">{{shijue}}</view><view class="fen">分</view><view class="judge">({{zn[2]}})</view>
+              <view class="zhineng">身体动觉智能:</view><view class="fenshu">{{dongjue}}</view><view class="fen">分</view><view class="judge">({{zn[3]}})</view>
+              <view class="zhineng">音乐节奏智能:</view><view class="fenshu">{{yinyue}}</view><view class="fen">分</view><view class="judge">({{zn[4]}})</view>
+              <view class="zhineng">交往交流智能:</view><view class="fenshu">{{jiaowang}}</view><view class="fen">分</view><view class="judge">({{zn[5]}})</view>
+              <view class="zhineng">自知自省智能:</view><view class="fenshu">{{zixing}}</view><view class="fen">分</view><view class="judge">({{zn[6]}})</view>
+              <view class="zhineng">自然观察智能:</view><view class="fenshu">{{guancha}}</view><view class="fen">分</view><view class="judge">({{zn[7]}})</view>
+              <view class="zhineng">存在智能:</view><view class="fenshu">{{cunzai}}</view><view class="fen">分</view><view class="judge">({{zn[8]}})</view>
+            </view>
+
+            <view class="zhu">
+            标准：单项智能得分8~12分，表明该项智能发展差；12~20分，该项智能发展较差；20~28分，该项智能发展处于一般水平；28~36分，该项智能发展较好；36~40分，表明该项智能发展及其优良。
+            </view>
+
+</view>

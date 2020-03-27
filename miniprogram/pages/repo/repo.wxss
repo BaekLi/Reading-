@@ -1,0 +1,78 @@
+/* miniprogram/pages/repo/repo.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content{
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 12px;
+  background-color: #FFF;
+}
+.title{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #019f46;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.intro{
+  color: rgb(34, 58, 82);
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 20px;
+}
+.ruxia{
+  text-align: left;
+  font-size: 1.1rem;
+  padding-left: 2%;
+  color: #019f46;
+}
+.radarContainer{
+  width:100%;
+  height:350px;
+  display: flex;
+  justify-content:center;
+  align-items: center; 
+  position: relative;
+}
+.radarCanvas{
+  width:400px;
+  height:350px;
+  margin: 0 auto;
+  position: absolute;
+}
+.zhineng{
+  width: 45%;
+  float: left;
+  margin-left: 5%;
+  line-height: 30px;
+}
+.fenshu{
+  width: 6%;
+  line-height: 30px;
+  float: left;
+}
+.fen{
+  width: 10%;
+  line-height: 30px;
+  float: left;
+}
+.judge{
+  float: left;
+  line-height: 30px;
+  color: #019f46;
+}
+.analyse{
+  height: 300px;
+}
+.zhu{
+  width: 94%;
+  margin-left: 3%;
+  font-size: 0.9rem;
+  height: 100px;
+  color: rgb(174, 174, 174);
+}
