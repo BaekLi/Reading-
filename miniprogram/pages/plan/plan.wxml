@@ -1,0 +1,12 @@
+<!--miniprogram/pages/plan/plan.wxml-->
+<view class="contain">
+    <image src="/images/bg1.png" class="background" mode="aspectFill"></image>
+    <!-- <view class="title">阅读计划</view> -->
+    <!-- <view style="height:8px;background-color: green;"></view> -->
+    <view style="height:350px"><image src="{{url}}" class="pic" alt=""></image></view>
+    <view class="content">
+    <view class="bookname">书名：{{bookname}}</view>
+    <view>{{intro}}</view>
+    </view>
+    <view class="submit"><button bindtap="" style="background-color:#35aa68;color:#FFF">开始阅读</button></view>
+</view>
