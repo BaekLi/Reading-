@@ -1,0 +1,9 @@
+<!--miniprogram/pages/how/how.wxml-->
+<view class="title">用户使用手册</view>
+<view class="bz">1、进入小程序后，在“我的”页面进行登录注册操作</view>
+<view class="bz">2、登录之后，在“首页”为您的孩子进行“量表测评”，填写72个问题</view>
+<view class="bz">3、完成测评后，小程序自动为您的孩子生成“分析报告”与“益智计划”</view>
+<view class="bz">4、从“首页”进入“分析报告”，可以查看您孩子在测评九个智能后分析的报告</view>
+<view class="bz">5、从“首页”进入“益智计划”，这是为您孩子量身定做的阅读计划</view>
+<view class="bz">6、从“首页”进入“每日打卡”，坚持打卡，养成每日阅读的好习惯</view>
+<view class="bz" style="margin-bottom:40px">7、进入“任务”页面，这里每周都会布置动态任务，线下完成绘本的阅读任务</view>

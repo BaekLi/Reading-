@@ -1,0 +1,17 @@
+/* miniprogram/pages/how/how.wxss */
+.title{
+  text-align: center;
+  font-size: 1.7rem;
+  color: #525252;
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.bz{
+  line-height: 2rem;
+  font-size: 1rem;
+  background-color: rgb(228, 227, 227);
+  opacity: 0.8;
+  margin: 5px 5px;
+  padding: 5px 5px;
+}
