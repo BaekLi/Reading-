@@ -1,0 +1,19 @@
+<!--miniprogram/pages/task/task.wxml-->
+<view>
+    <image src="/images/bg3.jpg" class="background" mode="aspectFill"></image>
+    <view>
+      <view class="title">我们一起来做任务吧</view>
+
+      <button style="width:90%;background-color: cadetblue;" class="btn" bindtap="bindShowMsg" data-value="0">{{Q1}}</button>
+      <view style="width:90%;margin-left:5%;background-color: cadetblue;" class="select" wx:if="{{select[0]}}">{{q1}}</view>
+      <button style="width:90%;background-color: cornflowerblue;" class="btn" bindtap="bindShowMsg" data-value="1">{{Q2}}</button>
+      <view style="width:90%;margin-left:5%;background-color: cornflowerblue;" class="select" wx:if="{{select[1]}}">{{q2}}</view>
+      <button style="width:90%;background-color: darksalmon;" class="btn" bindtap="bindShowMsg" data-value="2">{{Q3}}</button>
+      <view style="width:90%;margin-left:5%;background-color: darksalmon;" class="select" wx:if="{{select[2]}}">{{q3}}</view>
+      <button style="width:90%;background-color: darkseagreen;" class="btn" bindtap="bindShowMsg" data-value="3">{{Q4}}</button>
+      <view style="width:90%;margin-left:5%;background-color: darkseagreen;" class="select" wx:if="{{select[3]}}">{{q4}}</view>
+      <button style="width:90%;background-color: tan;margin-bottom:40px" class="btn" bindtap="bindShowMsg" data-value="4">{{Q5}}</button>
+      <view style="width:90%;margin-left:5%;background-color: tan;margin-bottom:40px;margin-top:-75px;" class="select" wx:if="{{select[4]}}">{{q5}}</view>
+    </view>
+</view>
+
