@@ -1,0 +1,34 @@
+<!--miniprogram/pages/cepin/cepin.wxml-->
+    <view class="content">
+        <view class="title">{{question.paper.title}}</view>
+        <view class="intro">
+            <view><text decode="true">&emsp;&emsp;</text>{{question.paper.introduction}}</view>
+            <view style="padding-top:6px"><text decode="true">&emsp;&emsp;</text>{{question.paper.biaozhun}}</view>
+            <view style="padding-top:6px"><text decode="true">&emsp;&emsp;</text>您孩子的表现在多大程度上是这样的昵?</view>
+        </view>
+        <view class="degree">
+            <view class="label">不符合 </view>
+            <view class="label">不太符合 </view>
+            <view class="label">不确定 </view>
+            <view class="label">基本符合 </view>
+            <view class="label">完全符合</view>
+        </view>
+
+        <view class="question">
+            <view wx:for="{{question.qstList}}" wx:key="{{index}}">
+                <view class="ask">
+                {{index+1}}、{{item.question}}
+                </view>
+                <view>
+                    <radio-group class="radio-group" bindchange="radioChange" data-value="{{index+1}}">
+                        <label wx:for-items="{{ansvalue}}">
+                            <radio value="{{item.value}}" checked="" class="radio"></radio>
+                        </label>
+                    </radio-group>
+                </view>
+            </view>
+        </view>
+
+        <view class="submit"><button bindtap="submitChoose" style="background-color:#35aa68;color:#FFF">提交</button></view>
+    </view>
+

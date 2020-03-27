@@ -1,0 +1,57 @@
+/* miniprogram/pages/cepin/cepin.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content{
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 10px;
+  background-color: #FFF;
+}
+.title{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #019f46;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.intro{
+  color: rgb(34, 58, 82);
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 20px;
+}
+.degree{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+}
+.label{
+  width: 20%;
+  float: left;
+  background-color: #35aa68;
+  text-align: center;
+  line-height: 33px;
+  color: #FFF;
+}
+.question{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ask{
+  line-height: 40px;
+}
+.radio{
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.submit{
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
