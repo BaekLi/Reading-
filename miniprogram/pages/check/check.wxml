@@ -1,0 +1,49 @@
+<!--miniprogram/pages/check/check.wxml-->
+<view class="jilu">
+    <image src="/images/bg2.jpg" class="background" mode="aspectFill"></image>
+    <view class='pic-rili'>
+      <image src='/images/rili.png' />
+    </view>
+    <view class="intro">
+      <view wx:if="{{check==0}}">今日未打卡</view>
+      <view wx:if="{{check==1}}">今日已打卡</view>
+      <view>总共打卡{{checkDay.length}}天</view>
+    </view>
+</view>
+<view class='calendar_title flex_nowrap'>
+  <view class='icon' bindtap='lastMonth'>
+     <image src='/images/icon-l.png' />
+  </view>
+  <view class="riqi">{{year}}年{{month}}月</view>
+  <view class='icon' bindtap='nextMonth'>
+    <image src='/images/icon-r.png' />
+  </view>
+</view>
+
+<!-- 日历主体 -->
+<view class='calendar'>
+  <view class='header'>
+    <view wx:for='{{date}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+      <view></view>
+    </view>
+  </view>
+
+  <view class='date-box'>
+    <block wx:for='{{dateArr}}' wx:key=''>
+      <view wx:if="{{item.isChecked==1}}" class='checkDay'>
+          <view class='date-head' bindtap='lookHuoDong' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+          <view>{{item.dateNum}}</view>
+        </view>
+      </view>
+      <view wx:if="{{item.isChecked!=1}}" class='{{isToday == item.isToday ? "nowDay" : ""}}'>
+        <view class='date-head' bindtap='lookHuoDong' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+          <view>{{item.dateNum}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>
+
+<view wx:if="{{check==0}}" class="submit"><button bindtap="daka" class="btn">今日打卡</button></view>
+<view wx:if="{{check==1}}" class="submit"><button bindtap="daka" class="btn">已打卡</button></view>
