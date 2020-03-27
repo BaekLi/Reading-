@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/check/check",
+    "pages/task/task",
+    "pages/cepin/cepin",
+    "pages/plan/plan",
+    "pages/repo/repo",
+    "pages/my/my",
+    "pages/kefu/kefu",
+    "pages/about/about",
+    "pages/edit/edit",
+    "pages/how/how"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#019f46",
+    "navigationBarTitleText": "READING +",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabbar/home.png",
+        "selectedIconPath": "/images/tabbar/home_on.png"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "任务",
+        "iconPath": "/images/tabbar/task.png",
+        "selectedIconPath": "/images/tabbar/task_on.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/tabbar/my.png",
+        "selectedIconPath": "/images/tabbar/my_on.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-popup": "vant/popup/index"
+  }
+}
